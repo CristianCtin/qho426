@@ -6,5 +6,6 @@ print('How tall are you (in meters)?')
 height = float(input())
 print('How much do you weight (in kilograms)?')
 weight = int(input())
+
 BMI = float(weight/height**2)
 print(name, "your age is " + str(age), 'years old and your BMI is' ,BMI)
