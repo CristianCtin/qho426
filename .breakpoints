@@ -1,5 +1,21 @@
 {
   "files": {
+    "demos/100days/Day1.py": [
+      {
+        "id": "64c4e29c-0297-4238-88ff-69b900b3b1cc",
+        "line": 3,
+        "version": 121,
+        "index": 84
+      }
+    ],
+    "demos/100days/Day1/16.py": [
+      {
+        "id": "ee53d600-cb51-49e8-9812-434f04529c14",
+        "line": 5,
+        "version": 245,
+        "index": 178
+      }
+    ],
     "demos/W2_solo2.py": [
       {
         "id": "22202f01-72f1-4ac9-90ca-b1ed7fe6636f",
