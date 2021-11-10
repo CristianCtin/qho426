@@ -1,43 +1,7 @@
-def display(w):
-  l = len(w)
-  print("#"*(l+4))
-  print("# " + w + " #")
-  print("#"*(l+4))
+#Code to find out 2 large prime numbers, whitch can be used in RSA encryption. It is made of 3 function. First one will be used to establish if number is prime, second function will find a prime number inside a given and last function will output the product of the two primes.
 
-def display_low(w):
-  return w.lower()
-
-def display_up(w):
-  return w.upper()
-
-def mirror(w):
-  print(f"{w} | {w[::-1]}")
-  
-
-def repeat(w):
-  print("How many times would you like to repet the word? ")
-  n = int(input())
-  for i in range(n):
-    if i % 2 == 1:
-      print(display_up(w))
-    else:
-      print(display_low(w))
-
-def run():
-  word = input("What is the word you would to play with?\n")
-  print("Choose one item from the menu:\n\n1-Display in a box\n2-Lower case\n3-Upper case\n4-Mirrored\n5-Repeat\n")
-
-  
-  response = int(input())
-  if response == 1:
-    display(word)
-  elif response == 2:
-    print(display_low(word))
-  elif response == 3:
-    print(display_up(word))
-  elif response == 4:
-    mirror(word)
-  elif response == 5:
-    repeat(word)
-
-run()
+def isPrime(n):
+  for thing in range(2, n):
+    if n % thing == 0:
+      return False
+  return True
