@@ -1,10 +1,19 @@
-print("How many rows should I have?")
-rows = int(input())
+print("Please enter a sequence: ")
+seq = input()
+print("Please enter the character for marker: ")
+marker = input()
 
-print("How many columns should I have?")
-columns = int(input())
+m1 = 9999
+m2 = 9999
 
-for row in range(0, rows, 1):
-    for column in range(0, columns, 1):
-        print(":-)", end="")
-    print()
+
+
+for pos in range(len(seq)):
+  let = seq[pos]
+  if let == marker:
+    if m1 == 9999:
+      m1 = pos
+    elif m2 == 9999:
+      m2 = pos
+
+print(f"The distance between two markers is {m2-m1-1}")
