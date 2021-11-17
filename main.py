@@ -1,8 +1,17 @@
-def directions():
-  directions = ["Move Forward", "Move Backward", "Turn Left", "Turn Right"]
-  return directions
+#Initialise empty set
+s = set()
 
-def run():
-  print(directions())
+#Check the tipe is set
+print(type(s))
 
-run()
+#Initialise non-empty set
+colours = {"blue", "yellow", "red", "purple", "green"}
+
+print(colours)
+
+#Adding elements to a set
+colours.add("black")
+colours.add("pink")
+
+
+print(colours)
