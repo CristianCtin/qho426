@@ -1,33 +1,28 @@
-phonebook = {}
-d2 = dict()
+def shop():
+  items = {"Fish":1, "Eggs":1.99, "Chips":1.49, "Cheese":4, "Coconut":2.29, "Bread":1.39, "Nesquik":3.99, "Milk":1.59}
+  return items
 
-#Intialise non-empty dictionary
-piotr_data = {"Name" : "Piotr", "Age" :55, "Doggo":False, "Title": "Mr"}
+def view_all(products = {}):
+  for i,j in products.items():
+    print(f"{i}: £{j}")
 
-#Print full dictionary
-print(piotr_data)
+def basket():
+  b = []
+  while True:
+    item = input("Enter item (or \"stop\" to stop): ")
+    if item.lower() == "stop" :
+      break
+    else:
+      n = int(input("Enter the quantity: "))
+      for i in range (n):
+        b.append(item)
+  return b
 
-#Use part of the dictionary for printing
-x = piotr_data["Name"]
-y = piotr_data["Age"]
-print(f"{x} is {y} yers old")
+def till(basket = []):
+  shoplist = shop()
+  total = 0.0
+  for item in basket:
+    total += shoplist[item]
+  return total
 
-#Adding elements to a dictionary
-phonebook["Max"] = +447789696955
-phonebook["Bob"] = +667575748473
-phonebook["Son"] = None
-
-print(phonebook)
-
-#Add more people in the phonebook
-for i in range(3):
-  n = input("enter the name: ")
-  numb = input(f"Enter {n}'s numner: ")
-  phonebook[n] = numb
-
-name = input("Who would you like to call?\n")
-
-if name in phonebook:
-  print(f"Calling {name} with phone no {phonebook['Max']} ")
-else:
-  print(f"{name} is not in your phonebook")
+print(till(basket()))

@@ -23,6 +23,14 @@
         "version": 117,
         "index": 175
       }
+    ],
+    "main.py": [
+      {
+        "id": "dc4426de-c1d7-456f-abdd-224beef1fbbd",
+        "line": 1,
+        "version": 11854,
+        "index": 0
+      }
     ]
   }
 }
