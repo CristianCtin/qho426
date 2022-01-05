@@ -1,16 +1,13 @@
-import matplotlib.pyplot as plt
-import matplotlib.animation as animation
-
-fig, ax = plt.subplots()
-
-def animate(frame):
-  ax.set_xlim(0, 10)
-  ax.set_ylim(0, 10)
-  ax.plot(frame, frame, "ro")
-
-
-def run():
-  x = animation.FuncAnimation(fig, animate, frames = 10, interval = 1000)
-  plt.show()
-
-run()
+print("Menu:\n1 = Process Data\n2 = Visualise Data\n3 = Export Data\n4 = Exit ")
+    opt = int(input("Choose an option: "))
+    if opt == 1:
+        print("\n1 = Record by Serial Number\n2 = Records by Observation Date\n3 = Group Records by Country/Region\n4 = Summarise Records")
+    elif opt == 2:
+        print("\n1 = Country/Region Pie Chart\n2 = Observations Chart\n3 = Animated Summary")
+    elif opt == 3:
+        print("\n1 = All Data\n2 = Data for Specific Country/Region")
+    elif opt == 4:
+        break
+    else:
+        print("Invalid Option. Choose number from 1 to 4")
+        return opt
