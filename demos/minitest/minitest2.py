@@ -1,10 +1,10 @@
 def pokes():
   print("Here are the Pokemon")
   me_poke = ["Pikachu", "Muk", "Arboka", "Newtoo", "Ratatata", "Muk"]
-  for i in range(len(me_poke)):
-    print(f"{me_poke[i]}", end = "***")
-  return me_poke
-
+ # for i in range(len(me_poke)):
+ #  print(f"{me_poke[i]}", end = "***")
+ #return me_poke
+print("***".join(me_poke))
 
 def sounds(p = []):
   noises = {}    #dictionarys
@@ -25,5 +25,7 @@ def store(sounds = {}):
   with open("pok_sounds.csv", "w") as f:
     for k, v in sounds.items():
       f.write(f"{k}, {v}\n")
+
+
 
 #store(sounds(["Mayo", "Ketchup"]))
