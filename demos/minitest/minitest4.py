@@ -10,9 +10,9 @@ class Per(ABC):
     self.age = 1
     self.smell =True
 
-  @abstractmethod
-  def sound():
-    pass
+    @abstractmethod
+    def sound():
+      pass
 
 
 class Dog(Pet):
